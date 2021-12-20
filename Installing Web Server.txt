@@ -1,0 +1,24 @@
+(Installing Web Server IIS)
+
+1. Launch a Windows Instance
+2. Connect through RDP
+3. After opening the Windows Vm
+4. Go to Start Menu > Server Manager (wait 2-3 mins)> Add Roles and Features > Next >Next>Next>
+5. In Server Roles select the "Web Server IIS" > Add Feature > Next > Next > Next >Install
+6. After the installation Go to > C:\inetpub\wwwroot\ (Delete the previous files)
+7. Create a notepad file
+"Content"
+and save it as "index.html".
+
+
+(Adding the Rule) (Aws Console)
+8. Go to Security > Click on the security group > Edit Inbound Rules >Add Rule
+9. Add http rule and save it.
+
+(Assigning the Elastic IP)
+10. Go to Elastic Ip > Allocate Elastic IP address > Allocate
+11. In Action > Associate Elastic IP address> Select the instance and private IP > Associate
+
+
+
+
